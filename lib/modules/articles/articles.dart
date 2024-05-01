@@ -9,4 +9,3 @@ export './views/article_details_page.dart';
 export './views/articles_view.dart';
 export './views/widgets/article_card.dart';
 export './views/widgets/articles_list_view.dart';
-
