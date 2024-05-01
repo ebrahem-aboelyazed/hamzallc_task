@@ -5,6 +5,8 @@ export './api/local/hive_manager.dart';
 export './api/local/settings_storage.dart';
 export './api/remote/base_api.dart';
 export './api/remote/base_api_impl.dart';
+export './api/tokens/refresh_token_interceptor.dart';
+export './api/tokens/token_manager.dart';
 export './di/dependencies.config.dart';
 export './di/dependencies.dart';
 export './di/register_module.dart';

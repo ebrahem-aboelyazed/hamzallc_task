@@ -14,7 +14,7 @@ abstract class RegisterModule {
         connectTimeout: const Duration(seconds: 10),
         contentType: 'application/json',
         queryParameters: {
-          'apiKey': dotenv.env[AppConstants.apiKeyName],
+          'api-key': dotenv.env[AppConstants.apiKeyName],
         },
       ),
     );
