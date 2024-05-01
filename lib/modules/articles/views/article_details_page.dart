@@ -20,13 +20,13 @@ class ArticleDetailsPage extends StatelessWidget {
           slivers: [
             SliverAppBar(
               elevation: 0,
-              expandedHeight: context.heightPercentage(0.3),
+              expandedHeight: context.heightPercentage(0.4),
               pinned: true,
               flexibleSpace: FlexibleSpaceBar(
                 background: CachedImage(
                   getImageUrl(),
                   radius: 0,
-                  height: context.heightPercentage(0.3),
+                  height: context.heightPercentage(0.4),
                 ),
               ),
             ),

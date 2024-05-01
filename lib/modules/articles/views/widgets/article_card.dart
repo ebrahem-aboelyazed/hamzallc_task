@@ -10,9 +10,10 @@ class ArticleCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final color = Theme.of(context).colorScheme.background;
     return OpenContainer(
-      closedColor: Colors.transparent,
-      openColor: Colors.transparent,
+      closedColor: color,
+      openColor: color,
       openBuilder: (context, action) {
         return ArticleDetailsPage(article: article);
       },
@@ -35,7 +36,6 @@ class ArticleCard extends StatelessWidget {
                       radius: 8,
                       height: 120,
                       width: 120,
-                      fit: BoxFit.contain,
                     ),
                   ),
                 ),
