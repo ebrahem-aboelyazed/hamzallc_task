@@ -6,12 +6,11 @@ A code challenge task for Hamzallc
 
 ## API Keys & Security
 
-This project is using [NYT] api for fetching movies data.
+This project is using [NYT] api for fetching articles data.
 API Keys are stored in a .env file for security
 To make the app work properly please create a .env file and add the following key with the API key
-value
-that you will get from the [NYT] API
-[NYT] This is the name inside the .env file that corresponds to the [NYT]
+value that you will get from the [NYT] API
+[API_KEY] This is the name inside the .env file that corresponds to the [NYT]
 
 ## Working with Translations 🌐
 
