@@ -7,7 +7,7 @@ part 'article.g.dart';
 
 @freezed
 class Article with _$Article {
-  @JsonSerializable(explicitToJson: true)
+  @JsonSerializable(explicitToJson: true, fieldRename: FieldRename.snake)
   const factory Article({
     @Default('') String uri,
     @Default('') String url,

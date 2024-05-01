@@ -7,7 +7,7 @@ part 'media.g.dart';
 
 @freezed
 class Media with _$Media {
-  @JsonSerializable(explicitToJson: true)
+  @JsonSerializable(explicitToJson: true, fieldRename: FieldRename.snake)
   const factory Media({
     @Default('') String type,
     @Default('') String subtype,

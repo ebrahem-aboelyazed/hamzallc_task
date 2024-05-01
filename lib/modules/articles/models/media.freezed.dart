@@ -161,7 +161,7 @@ class __$$MediaImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-@JsonSerializable(explicitToJson: true)
+@JsonSerializable(explicitToJson: true, fieldRename: FieldRename.snake)
 class _$MediaImpl with DiagnosticableTreeMixin implements _Media {
   const _$MediaImpl(
       {this.type = '',

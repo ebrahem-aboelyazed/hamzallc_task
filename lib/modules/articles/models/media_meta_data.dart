@@ -6,7 +6,7 @@ part 'media_meta_data.g.dart';
 
 @freezed
 class MediaMetadata with _$MediaMetadata {
-  @JsonSerializable(explicitToJson: true)
+  @JsonSerializable(explicitToJson: true, fieldRename: FieldRename.snake)
   const factory MediaMetadata({
     @Default('') String url,
     @Default('') String format,

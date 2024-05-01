@@ -12,7 +12,7 @@ _$MediaImpl _$$MediaImplFromJson(Map<String, dynamic> json) => _$MediaImpl(
       caption: json['caption'] as String? ?? '',
       copyright: json['copyright'] as String? ?? '',
       approvedForSyndication:
-          (json['approvedForSyndication'] as num?)?.toInt() ?? 0,
+          (json['approved_for_syndication'] as num?)?.toInt() ?? 0,
       mediaMetadata: (json['media-metadata'] as List<dynamic>?)
               ?.map((e) => MediaMetadata.fromJson(e as Map<String, dynamic>))
               .toList() ??
@@ -25,6 +25,6 @@ Map<String, dynamic> _$$MediaImplToJson(_$MediaImpl instance) =>
       'subtype': instance.subtype,
       'caption': instance.caption,
       'copyright': instance.copyright,
-      'approvedForSyndication': instance.approvedForSyndication,
+      'approved_for_syndication': instance.approvedForSyndication,
       'media-metadata': instance.mediaMetadata.map((e) => e.toJson()).toList(),
     };

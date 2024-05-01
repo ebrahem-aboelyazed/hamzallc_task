@@ -129,7 +129,7 @@ class __$$MediaMetadataImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-@JsonSerializable(explicitToJson: true)
+@JsonSerializable(explicitToJson: true, fieldRename: FieldRename.snake)
 class _$MediaMetadataImpl
     with DiagnosticableTreeMixin
     implements _MediaMetadata {

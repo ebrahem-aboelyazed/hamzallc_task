@@ -355,7 +355,7 @@ class __$$ArticleImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-@JsonSerializable(explicitToJson: true)
+@JsonSerializable(explicitToJson: true, fieldRename: FieldRename.snake)
 class _$ArticleImpl with DiagnosticableTreeMixin implements _Article {
   const _$ArticleImpl(
       {this.uri = '',
