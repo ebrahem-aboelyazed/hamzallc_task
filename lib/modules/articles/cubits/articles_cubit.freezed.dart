@@ -23,6 +23,7 @@ mixin _$ArticlesState {
     required TResult Function(List<Article> articles) loaded,
     required TResult Function(String? search) searching,
     required TResult Function(Failure failure) failure,
+    required TResult Function(List<Article> articles) fetchedBackground,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -32,6 +33,7 @@ mixin _$ArticlesState {
     TResult? Function(List<Article> articles)? loaded,
     TResult? Function(String? search)? searching,
     TResult? Function(Failure failure)? failure,
+    TResult? Function(List<Article> articles)? fetchedBackground,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -41,6 +43,7 @@ mixin _$ArticlesState {
     TResult Function(List<Article> articles)? loaded,
     TResult Function(String? search)? searching,
     TResult Function(Failure failure)? failure,
+    TResult Function(List<Article> articles)? fetchedBackground,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -51,6 +54,8 @@ mixin _$ArticlesState {
     required TResult Function(ArticlesLoaded value) loaded,
     required TResult Function(ArticlesSearching value) searching,
     required TResult Function(ArticlesFailure value) failure,
+    required TResult Function(ArticlesFetchedBackground value)
+        fetchedBackground,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -60,6 +65,7 @@ mixin _$ArticlesState {
     TResult? Function(ArticlesLoaded value)? loaded,
     TResult? Function(ArticlesSearching value)? searching,
     TResult? Function(ArticlesFailure value)? failure,
+    TResult? Function(ArticlesFetchedBackground value)? fetchedBackground,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -69,6 +75,7 @@ mixin _$ArticlesState {
     TResult Function(ArticlesLoaded value)? loaded,
     TResult Function(ArticlesSearching value)? searching,
     TResult Function(ArticlesFailure value)? failure,
+    TResult Function(ArticlesFetchedBackground value)? fetchedBackground,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -135,6 +142,7 @@ class _$ArticlesInitialImpl implements ArticlesInitial {
     required TResult Function(List<Article> articles) loaded,
     required TResult Function(String? search) searching,
     required TResult Function(Failure failure) failure,
+    required TResult Function(List<Article> articles) fetchedBackground,
   }) {
     return initial();
   }
@@ -147,6 +155,7 @@ class _$ArticlesInitialImpl implements ArticlesInitial {
     TResult? Function(List<Article> articles)? loaded,
     TResult? Function(String? search)? searching,
     TResult? Function(Failure failure)? failure,
+    TResult? Function(List<Article> articles)? fetchedBackground,
   }) {
     return initial?.call();
   }
@@ -159,6 +168,7 @@ class _$ArticlesInitialImpl implements ArticlesInitial {
     TResult Function(List<Article> articles)? loaded,
     TResult Function(String? search)? searching,
     TResult Function(Failure failure)? failure,
+    TResult Function(List<Article> articles)? fetchedBackground,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -175,6 +185,8 @@ class _$ArticlesInitialImpl implements ArticlesInitial {
     required TResult Function(ArticlesLoaded value) loaded,
     required TResult Function(ArticlesSearching value) searching,
     required TResult Function(ArticlesFailure value) failure,
+    required TResult Function(ArticlesFetchedBackground value)
+        fetchedBackground,
   }) {
     return initial(this);
   }
@@ -187,6 +199,7 @@ class _$ArticlesInitialImpl implements ArticlesInitial {
     TResult? Function(ArticlesLoaded value)? loaded,
     TResult? Function(ArticlesSearching value)? searching,
     TResult? Function(ArticlesFailure value)? failure,
+    TResult? Function(ArticlesFetchedBackground value)? fetchedBackground,
   }) {
     return initial?.call(this);
   }
@@ -199,6 +212,7 @@ class _$ArticlesInitialImpl implements ArticlesInitial {
     TResult Function(ArticlesLoaded value)? loaded,
     TResult Function(ArticlesSearching value)? searching,
     TResult Function(ArticlesFailure value)? failure,
+    TResult Function(ArticlesFetchedBackground value)? fetchedBackground,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -255,6 +269,7 @@ class _$ArticlesLoadingImpl implements ArticlesLoading {
     required TResult Function(List<Article> articles) loaded,
     required TResult Function(String? search) searching,
     required TResult Function(Failure failure) failure,
+    required TResult Function(List<Article> articles) fetchedBackground,
   }) {
     return loading();
   }
@@ -267,6 +282,7 @@ class _$ArticlesLoadingImpl implements ArticlesLoading {
     TResult? Function(List<Article> articles)? loaded,
     TResult? Function(String? search)? searching,
     TResult? Function(Failure failure)? failure,
+    TResult? Function(List<Article> articles)? fetchedBackground,
   }) {
     return loading?.call();
   }
@@ -279,6 +295,7 @@ class _$ArticlesLoadingImpl implements ArticlesLoading {
     TResult Function(List<Article> articles)? loaded,
     TResult Function(String? search)? searching,
     TResult Function(Failure failure)? failure,
+    TResult Function(List<Article> articles)? fetchedBackground,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -295,6 +312,8 @@ class _$ArticlesLoadingImpl implements ArticlesLoading {
     required TResult Function(ArticlesLoaded value) loaded,
     required TResult Function(ArticlesSearching value) searching,
     required TResult Function(ArticlesFailure value) failure,
+    required TResult Function(ArticlesFetchedBackground value)
+        fetchedBackground,
   }) {
     return loading(this);
   }
@@ -307,6 +326,7 @@ class _$ArticlesLoadingImpl implements ArticlesLoading {
     TResult? Function(ArticlesLoaded value)? loaded,
     TResult? Function(ArticlesSearching value)? searching,
     TResult? Function(ArticlesFailure value)? failure,
+    TResult? Function(ArticlesFetchedBackground value)? fetchedBackground,
   }) {
     return loading?.call(this);
   }
@@ -319,6 +339,7 @@ class _$ArticlesLoadingImpl implements ArticlesLoading {
     TResult Function(ArticlesLoaded value)? loaded,
     TResult Function(ArticlesSearching value)? searching,
     TResult Function(ArticlesFailure value)? failure,
+    TResult Function(ArticlesFetchedBackground value)? fetchedBackground,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -409,6 +430,7 @@ class _$ArticlesLoadedImpl implements ArticlesLoaded {
     required TResult Function(List<Article> articles) loaded,
     required TResult Function(String? search) searching,
     required TResult Function(Failure failure) failure,
+    required TResult Function(List<Article> articles) fetchedBackground,
   }) {
     return loaded(articles);
   }
@@ -421,6 +443,7 @@ class _$ArticlesLoadedImpl implements ArticlesLoaded {
     TResult? Function(List<Article> articles)? loaded,
     TResult? Function(String? search)? searching,
     TResult? Function(Failure failure)? failure,
+    TResult? Function(List<Article> articles)? fetchedBackground,
   }) {
     return loaded?.call(articles);
   }
@@ -433,6 +456,7 @@ class _$ArticlesLoadedImpl implements ArticlesLoaded {
     TResult Function(List<Article> articles)? loaded,
     TResult Function(String? search)? searching,
     TResult Function(Failure failure)? failure,
+    TResult Function(List<Article> articles)? fetchedBackground,
     required TResult orElse(),
   }) {
     if (loaded != null) {
@@ -449,6 +473,8 @@ class _$ArticlesLoadedImpl implements ArticlesLoaded {
     required TResult Function(ArticlesLoaded value) loaded,
     required TResult Function(ArticlesSearching value) searching,
     required TResult Function(ArticlesFailure value) failure,
+    required TResult Function(ArticlesFetchedBackground value)
+        fetchedBackground,
   }) {
     return loaded(this);
   }
@@ -461,6 +487,7 @@ class _$ArticlesLoadedImpl implements ArticlesLoaded {
     TResult? Function(ArticlesLoaded value)? loaded,
     TResult? Function(ArticlesSearching value)? searching,
     TResult? Function(ArticlesFailure value)? failure,
+    TResult? Function(ArticlesFetchedBackground value)? fetchedBackground,
   }) {
     return loaded?.call(this);
   }
@@ -473,6 +500,7 @@ class _$ArticlesLoadedImpl implements ArticlesLoaded {
     TResult Function(ArticlesLoaded value)? loaded,
     TResult Function(ArticlesSearching value)? searching,
     TResult Function(ArticlesFailure value)? failure,
+    TResult Function(ArticlesFetchedBackground value)? fetchedBackground,
     required TResult orElse(),
   }) {
     if (loaded != null) {
@@ -562,6 +590,7 @@ class _$ArticlesSearchingImpl implements ArticlesSearching {
     required TResult Function(List<Article> articles) loaded,
     required TResult Function(String? search) searching,
     required TResult Function(Failure failure) failure,
+    required TResult Function(List<Article> articles) fetchedBackground,
   }) {
     return searching(search);
   }
@@ -574,6 +603,7 @@ class _$ArticlesSearchingImpl implements ArticlesSearching {
     TResult? Function(List<Article> articles)? loaded,
     TResult? Function(String? search)? searching,
     TResult? Function(Failure failure)? failure,
+    TResult? Function(List<Article> articles)? fetchedBackground,
   }) {
     return searching?.call(search);
   }
@@ -586,6 +616,7 @@ class _$ArticlesSearchingImpl implements ArticlesSearching {
     TResult Function(List<Article> articles)? loaded,
     TResult Function(String? search)? searching,
     TResult Function(Failure failure)? failure,
+    TResult Function(List<Article> articles)? fetchedBackground,
     required TResult orElse(),
   }) {
     if (searching != null) {
@@ -602,6 +633,8 @@ class _$ArticlesSearchingImpl implements ArticlesSearching {
     required TResult Function(ArticlesLoaded value) loaded,
     required TResult Function(ArticlesSearching value) searching,
     required TResult Function(ArticlesFailure value) failure,
+    required TResult Function(ArticlesFetchedBackground value)
+        fetchedBackground,
   }) {
     return searching(this);
   }
@@ -614,6 +647,7 @@ class _$ArticlesSearchingImpl implements ArticlesSearching {
     TResult? Function(ArticlesLoaded value)? loaded,
     TResult? Function(ArticlesSearching value)? searching,
     TResult? Function(ArticlesFailure value)? failure,
+    TResult? Function(ArticlesFetchedBackground value)? fetchedBackground,
   }) {
     return searching?.call(this);
   }
@@ -626,6 +660,7 @@ class _$ArticlesSearchingImpl implements ArticlesSearching {
     TResult Function(ArticlesLoaded value)? loaded,
     TResult Function(ArticlesSearching value)? searching,
     TResult Function(ArticlesFailure value)? failure,
+    TResult Function(ArticlesFetchedBackground value)? fetchedBackground,
     required TResult orElse(),
   }) {
     if (searching != null) {
@@ -715,6 +750,7 @@ class _$ArticlesFailureImpl implements ArticlesFailure {
     required TResult Function(List<Article> articles) loaded,
     required TResult Function(String? search) searching,
     required TResult Function(Failure failure) failure,
+    required TResult Function(List<Article> articles) fetchedBackground,
   }) {
     return failure(this.failure);
   }
@@ -727,6 +763,7 @@ class _$ArticlesFailureImpl implements ArticlesFailure {
     TResult? Function(List<Article> articles)? loaded,
     TResult? Function(String? search)? searching,
     TResult? Function(Failure failure)? failure,
+    TResult? Function(List<Article> articles)? fetchedBackground,
   }) {
     return failure?.call(this.failure);
   }
@@ -739,6 +776,7 @@ class _$ArticlesFailureImpl implements ArticlesFailure {
     TResult Function(List<Article> articles)? loaded,
     TResult Function(String? search)? searching,
     TResult Function(Failure failure)? failure,
+    TResult Function(List<Article> articles)? fetchedBackground,
     required TResult orElse(),
   }) {
     if (failure != null) {
@@ -755,6 +793,8 @@ class _$ArticlesFailureImpl implements ArticlesFailure {
     required TResult Function(ArticlesLoaded value) loaded,
     required TResult Function(ArticlesSearching value) searching,
     required TResult Function(ArticlesFailure value) failure,
+    required TResult Function(ArticlesFetchedBackground value)
+        fetchedBackground,
   }) {
     return failure(this);
   }
@@ -767,6 +807,7 @@ class _$ArticlesFailureImpl implements ArticlesFailure {
     TResult? Function(ArticlesLoaded value)? loaded,
     TResult? Function(ArticlesSearching value)? searching,
     TResult? Function(ArticlesFailure value)? failure,
+    TResult? Function(ArticlesFetchedBackground value)? fetchedBackground,
   }) {
     return failure?.call(this);
   }
@@ -779,6 +820,7 @@ class _$ArticlesFailureImpl implements ArticlesFailure {
     TResult Function(ArticlesLoaded value)? loaded,
     TResult Function(ArticlesSearching value)? searching,
     TResult Function(ArticlesFailure value)? failure,
+    TResult Function(ArticlesFetchedBackground value)? fetchedBackground,
     required TResult orElse(),
   }) {
     if (failure != null) {
@@ -795,4 +837,173 @@ abstract class ArticlesFailure implements ArticlesState {
   @JsonKey(ignore: true)
   _$$ArticlesFailureImplCopyWith<_$ArticlesFailureImpl> get copyWith =>
       throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$ArticlesFetchedBackgroundImplCopyWith<$Res> {
+  factory _$$ArticlesFetchedBackgroundImplCopyWith(
+          _$ArticlesFetchedBackgroundImpl value,
+          $Res Function(_$ArticlesFetchedBackgroundImpl) then) =
+      __$$ArticlesFetchedBackgroundImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({List<Article> articles});
+}
+
+/// @nodoc
+class __$$ArticlesFetchedBackgroundImplCopyWithImpl<$Res>
+    extends _$ArticlesStateCopyWithImpl<$Res, _$ArticlesFetchedBackgroundImpl>
+    implements _$$ArticlesFetchedBackgroundImplCopyWith<$Res> {
+  __$$ArticlesFetchedBackgroundImplCopyWithImpl(
+      _$ArticlesFetchedBackgroundImpl _value,
+      $Res Function(_$ArticlesFetchedBackgroundImpl) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? articles = null,
+  }) {
+    return _then(_$ArticlesFetchedBackgroundImpl(
+      null == articles
+          ? _value._articles
+          : articles // ignore: cast_nullable_to_non_nullable
+              as List<Article>,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$ArticlesFetchedBackgroundImpl implements ArticlesFetchedBackground {
+  const _$ArticlesFetchedBackgroundImpl(final List<Article> articles)
+      : _articles = articles;
+
+  final List<Article> _articles;
+  @override
+  List<Article> get articles {
+    if (_articles is EqualUnmodifiableListView) return _articles;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_articles);
+  }
+
+  @override
+  String toString() {
+    return 'ArticlesState.fetchedBackground(articles: $articles)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$ArticlesFetchedBackgroundImpl &&
+            const DeepCollectionEquality().equals(other._articles, _articles));
+  }
+
+  @override
+  int get hashCode =>
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(_articles));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$ArticlesFetchedBackgroundImplCopyWith<_$ArticlesFetchedBackgroundImpl>
+      get copyWith => __$$ArticlesFetchedBackgroundImplCopyWithImpl<
+          _$ArticlesFetchedBackgroundImpl>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loading,
+    required TResult Function(List<Article> articles) loaded,
+    required TResult Function(String? search) searching,
+    required TResult Function(Failure failure) failure,
+    required TResult Function(List<Article> articles) fetchedBackground,
+  }) {
+    return fetchedBackground(articles);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(List<Article> articles)? loaded,
+    TResult? Function(String? search)? searching,
+    TResult? Function(Failure failure)? failure,
+    TResult? Function(List<Article> articles)? fetchedBackground,
+  }) {
+    return fetchedBackground?.call(articles);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loading,
+    TResult Function(List<Article> articles)? loaded,
+    TResult Function(String? search)? searching,
+    TResult Function(Failure failure)? failure,
+    TResult Function(List<Article> articles)? fetchedBackground,
+    required TResult orElse(),
+  }) {
+    if (fetchedBackground != null) {
+      return fetchedBackground(articles);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(ArticlesInitial value) initial,
+    required TResult Function(ArticlesLoading value) loading,
+    required TResult Function(ArticlesLoaded value) loaded,
+    required TResult Function(ArticlesSearching value) searching,
+    required TResult Function(ArticlesFailure value) failure,
+    required TResult Function(ArticlesFetchedBackground value)
+        fetchedBackground,
+  }) {
+    return fetchedBackground(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(ArticlesInitial value)? initial,
+    TResult? Function(ArticlesLoading value)? loading,
+    TResult? Function(ArticlesLoaded value)? loaded,
+    TResult? Function(ArticlesSearching value)? searching,
+    TResult? Function(ArticlesFailure value)? failure,
+    TResult? Function(ArticlesFetchedBackground value)? fetchedBackground,
+  }) {
+    return fetchedBackground?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(ArticlesInitial value)? initial,
+    TResult Function(ArticlesLoading value)? loading,
+    TResult Function(ArticlesLoaded value)? loaded,
+    TResult Function(ArticlesSearching value)? searching,
+    TResult Function(ArticlesFailure value)? failure,
+    TResult Function(ArticlesFetchedBackground value)? fetchedBackground,
+    required TResult orElse(),
+  }) {
+    if (fetchedBackground != null) {
+      return fetchedBackground(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class ArticlesFetchedBackground implements ArticlesState {
+  const factory ArticlesFetchedBackground(final List<Article> articles) =
+      _$ArticlesFetchedBackgroundImpl;
+
+  List<Article> get articles;
+  @JsonKey(ignore: true)
+  _$$ArticlesFetchedBackgroundImplCopyWith<_$ArticlesFetchedBackgroundImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
