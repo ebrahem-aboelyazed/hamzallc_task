@@ -1,5 +1,6 @@
 //GENERATED BARREL FILE
 export './api/local/api_cache_interceptor.dart';
+export './api/local/api_cache_manager.dart';
 export './api/local/hive_manager.dart';
 export './api/local/settings_storage.dart';
 export './api/remote/base_api.dart';

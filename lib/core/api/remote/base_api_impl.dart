@@ -2,7 +2,6 @@ import 'dart:developer';
 
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
-import 'package:hamzallc_task/core/api/remote/base_api.dart';
 import 'package:hamzallc_task/core/core.dart';
 import 'package:injectable/injectable.dart';
 
@@ -10,12 +9,16 @@ import 'package:injectable/injectable.dart';
 class BaseApiImpl implements BaseApi {
   BaseApiImpl(
     this._dio,
+    this._apiCacheManager,
   );
 
   final Dio _dio;
+  final ApiCacheManager _apiCacheManager;
 
   @PostConstruct(preResolve: true)
-  Future<void> init() async {}
+  Future<void> init() async {
+    _dio.interceptors.add(ApiCacheInterceptor(_apiCacheManager));
+  }
 
   @override
   Future<Either<Failure, Response<dynamic>>> postData(
