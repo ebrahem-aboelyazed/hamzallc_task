@@ -4,12 +4,14 @@ class AppColors {
   AppColors._();
 
   static const Color borderColor = Color(0xffDFE1E7);
+  static const Color silverGray = Color(0xffE8EAED);
   static const Color royalBlue = Color(0xff407BFF);
   static const Color pastelBlue = Color(0xffDBE3FF);
   static const Color skyBlue = Color(0xff88A4E8);
 
   static const Color darkPrimaryColor = Color(0xffDDE6ED);
   static const Color darkSecondaryColor = Color(0xff9DB2BF);
+
   //static const Color darkBackgroundColor = Color(0xff27374D);
   static const Color darkBackgroundColor = Colors.black;
 

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:hamzallc_task/modules/articles/articles.dart';
 import 'package:hamzallc_task/modules/home/home.dart';
+import 'package:hamzallc_task/modules/settings/settings.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -24,8 +26,9 @@ class HomePage extends StatelessWidget {
               },
               child: PageView(
                 controller: cubit.pageController,
-                children: [
-                  Container(),
+                children: const [
+                  ArticlesView(),
+                  SettingsView(),
                 ],
               ),
             );

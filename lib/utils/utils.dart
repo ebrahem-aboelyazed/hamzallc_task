@@ -8,4 +8,3 @@ export './extensions/snackbars_extension.dart';
 export './helpers/app_helper.dart';
 export './theme/dark_theme.dart';
 export './theme/light_theme.dart';
-

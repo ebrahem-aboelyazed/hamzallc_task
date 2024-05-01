@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hamzallc_task/core/core.dart';
 import 'package:hamzallc_task/l10n/l10n.dart';
+import 'package:hamzallc_task/modules/articles/articles.dart';
 import 'package:hamzallc_task/routes/routes.dart';
 import 'package:hamzallc_task/utils/utils.dart';
 import 'package:hive_flutter/hive_flutter.dart';
@@ -13,7 +14,15 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     final settingsStorage = getIt.get<SettingsStorage>();
     return MultiBlocProvider(
-      providers: [],
+      providers: [
+        BlocProvider<ArticlesCubit>(
+          create: (BuildContext context) {
+            return ArticlesCubit(
+              articlesService: getIt.get<ArticlesService>(),
+            )..getMostViewedArticles();
+          },
+        ),
+      ],
       child: GestureDetector(
         onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
         child: ValueListenableBuilder<Box<dynamic>>(

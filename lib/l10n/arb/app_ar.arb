@@ -6,5 +6,6 @@
   "language": "اللغة",
   "something_went_wrong": "حدث خطأ ما، يرجى المحاولة مرة أخرى لاحقًا",
   "settings": "الإعدادات",
-  "dark_mode": "الوضع الليلي"
+  "dark_mode": "الوضع الليلي",
+  "articles": "المقالات"
 }

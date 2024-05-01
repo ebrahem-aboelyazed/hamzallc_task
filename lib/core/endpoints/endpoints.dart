@@ -1,8 +1,7 @@
 class EndPoints {
   EndPoints._();
 
-  //Base Url
-  static const String baseUrl = 'http://www.omdbapi.com/';
+  static const String baseUrl = 'https://api.nytimes.com/';
 
-  static const String search = '';
+  static const String mostViewed = 'svc/mostpopular/v2/viewed/7.json';
 }

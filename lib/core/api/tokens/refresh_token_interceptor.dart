@@ -12,8 +12,10 @@ class RefreshTokenInterceptor implements Interceptor {
   }
 
   @override
-  void onResponse(Response<dynamic> response, ResponseInterceptorHandler handler) {
+  void onResponse(
+    Response<dynamic> response,
+    ResponseInterceptorHandler handler,
+  ) {
     // TODO: implement onResponse
   }
-
 }
