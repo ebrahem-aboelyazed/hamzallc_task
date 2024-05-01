@@ -35,6 +35,7 @@ class ArticleCard extends StatelessWidget {
                       radius: 8,
                       height: 120,
                       width: 120,
+                      fit: BoxFit.contain,
                     ),
                   ),
                 ),
@@ -71,9 +72,9 @@ class ArticleCard extends StatelessWidget {
   String getImageUrl() {
     final media = article.media;
     if (media.isNotEmpty) {
-      final firstItem = media.first.mediaMetadata;
-      if (firstItem.isNotEmpty) {
-        return firstItem.first.url;
+      final metaData = media.first.mediaMetadata;
+      if (metaData.isNotEmpty) {
+        return metaData.last.url;
       }
     }
     return 'https://placehold.co/600x400.png';

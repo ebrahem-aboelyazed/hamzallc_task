@@ -31,28 +31,31 @@ class ArticleDetailsPage extends StatelessWidget {
               ),
             ),
             SliverToBoxAdapter(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const SizedBox(height: 24),
-                  Text(
-                    '${context.l10n.published}: ${article.publishedDate}',
-                  ),
-                  const SizedBox(height: 8),
-                  Text(
-                    article.title,
-                    style: Styles.boldText.copyWith(
-                      fontSize: 20,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 12),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const SizedBox(height: 16),
+                    Text(
+                      '${context.l10n.published}: ${article.publishedDate}',
                     ),
-                  ),
-                  const SizedBox(height: 4),
-                  Text(
-                    article.abstract,
-                    style: const TextStyle(
-                      fontSize: 16,
+                    const SizedBox(height: 8),
+                    Text(
+                      article.title,
+                      style: Styles.boldText.copyWith(
+                        fontSize: 20,
+                      ),
                     ),
-                  ),
-                ],
+                    const SizedBox(height: 4),
+                    Text(
+                      article.abstract,
+                      style: const TextStyle(
+                        fontSize: 16,
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
           ],
@@ -64,9 +67,9 @@ class ArticleDetailsPage extends StatelessWidget {
   String getImageUrl() {
     final media = article.media;
     if (media.isNotEmpty) {
-      final firstItem = media.first.mediaMetadata;
-      if (firstItem.isNotEmpty) {
-        return firstItem.first.url;
+      final metaData = media.first.mediaMetadata;
+      if (metaData.isNotEmpty) {
+        return metaData.last.url;
       }
     }
     return 'https://placehold.co/600x400.png';
