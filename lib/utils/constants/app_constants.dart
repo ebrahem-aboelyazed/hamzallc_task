@@ -4,6 +4,7 @@ class AppConstants {
   static const String apiKeyName = 'API_KEY';
   static const String mode = 'mode';
   static const String cacheBox = 'cache_box';
+  static const String credentialsBox = 'credentials_box';
   static const String settings = 'settings';
   static const String preferences = 'preferences';
   static const String languageCode = 'language_code';

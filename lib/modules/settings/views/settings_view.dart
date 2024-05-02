@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hamzallc_task/core/core.dart';
 import 'package:hamzallc_task/l10n/l10n.dart';
+import 'package:hamzallc_task/modules/settings/settings.dart';
 
 class SettingsView extends StatefulWidget {
   const SettingsView({super.key});

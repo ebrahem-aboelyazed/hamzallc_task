@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hamzallc_task/core/core.dart';
 import 'package:hamzallc_task/l10n/l10n.dart';
 import 'package:hamzallc_task/modules/articles/articles.dart';
+import 'package:hamzallc_task/modules/settings/settings.dart';
 import 'package:hamzallc_task/routes/routes.dart';
 import 'package:hamzallc_task/utils/utils.dart';
 import 'package:hive_flutter/hive_flutter.dart';

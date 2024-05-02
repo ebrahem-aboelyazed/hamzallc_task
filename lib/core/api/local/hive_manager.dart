@@ -39,4 +39,12 @@ class HiveManager {
       encryptionCipher: HiveAesCipher(encryptionKey),
     );
   }
+
+  Future<Box<String>> initializeCredentialsBox() async {
+    final encryptionKey = await _setupSecureKey();
+    return Hive.openBox<String>(
+      AppConstants.credentialsBox,
+      encryptionCipher: HiveAesCipher(encryptionKey),
+    );
+  }
 }

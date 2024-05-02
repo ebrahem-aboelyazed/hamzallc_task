@@ -10,14 +10,25 @@ class BaseApiImpl implements BaseApi {
   BaseApiImpl(
     this._dio,
     this._apiCacheManager,
+    this._tokenRepository,
+    this._tokenStorage,
   );
 
   final Dio _dio;
   final ApiCacheManager _apiCacheManager;
+  final TokenRepository _tokenRepository;
+  final TokenStorage _tokenStorage;
 
   @PostConstruct(preResolve: true)
   Future<void> init() async {
-    _dio.interceptors.add(ApiCacheInterceptor(_apiCacheManager));
+    _dio.interceptors
+      ..clear()
+      ..addAll(
+        [
+          ApiCacheInterceptor(_apiCacheManager),
+          TokenInterceptor(_tokenRepository, _tokenStorage),
+        ],
+      );
   }
 
   @override

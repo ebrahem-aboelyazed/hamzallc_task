@@ -21,6 +21,7 @@ class AppHelper {
     final hiveManager = getIt.get<HiveManager>();
     await Hive.initFlutter();
     await hiveManager.initializeCacheBox();
+    await hiveManager.initializeCredentialsBox();
     await hiveManager.initializePrefsBox();
     await hiveManager.initializeSettingsBox();
     syncArticlesInBackground();
