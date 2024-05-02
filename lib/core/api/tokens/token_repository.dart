@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:hamzallc_task/core/core.dart';
-import 'package:hamzallc_task/modules/auth/auth.dart';
+import 'package:hamzallc_task/modules/home/home.dart';
 import 'package:injectable/injectable.dart';
 
 @LazySingleton()

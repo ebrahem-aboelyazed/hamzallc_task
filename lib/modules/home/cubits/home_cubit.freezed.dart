@@ -19,32 +19,38 @@ mixin _$HomeState {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
+    required TResult Function() userUnauthorized,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
+    TResult? Function()? userUnauthorized,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
+    TResult Function()? userUnauthorized,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(HomeInitial value) initial,
+    required TResult Function(UserUnauthorized value) userUnauthorized,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(HomeInitial value)? initial,
+    TResult? Function(UserUnauthorized value)? userUnauthorized,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(HomeInitial value)? initial,
+    TResult Function(UserUnauthorized value)? userUnauthorized,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -106,6 +112,7 @@ class _$HomeInitialImpl implements HomeInitial {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
+    required TResult Function() userUnauthorized,
   }) {
     return initial();
   }
@@ -114,6 +121,7 @@ class _$HomeInitialImpl implements HomeInitial {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
+    TResult? Function()? userUnauthorized,
   }) {
     return initial?.call();
   }
@@ -122,6 +130,7 @@ class _$HomeInitialImpl implements HomeInitial {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
+    TResult Function()? userUnauthorized,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -134,6 +143,7 @@ class _$HomeInitialImpl implements HomeInitial {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(HomeInitial value) initial,
+    required TResult Function(UserUnauthorized value) userUnauthorized,
   }) {
     return initial(this);
   }
@@ -142,6 +152,7 @@ class _$HomeInitialImpl implements HomeInitial {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(HomeInitial value)? initial,
+    TResult? Function(UserUnauthorized value)? userUnauthorized,
   }) {
     return initial?.call(this);
   }
@@ -150,6 +161,7 @@ class _$HomeInitialImpl implements HomeInitial {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(HomeInitial value)? initial,
+    TResult Function(UserUnauthorized value)? userUnauthorized,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -161,4 +173,106 @@ class _$HomeInitialImpl implements HomeInitial {
 
 abstract class HomeInitial implements HomeState {
   const factory HomeInitial() = _$HomeInitialImpl;
+}
+
+/// @nodoc
+abstract class _$$UserUnauthorizedImplCopyWith<$Res> {
+  factory _$$UserUnauthorizedImplCopyWith(_$UserUnauthorizedImpl value,
+          $Res Function(_$UserUnauthorizedImpl) then) =
+      __$$UserUnauthorizedImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$UserUnauthorizedImplCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$UserUnauthorizedImpl>
+    implements _$$UserUnauthorizedImplCopyWith<$Res> {
+  __$$UserUnauthorizedImplCopyWithImpl(_$UserUnauthorizedImpl _value,
+      $Res Function(_$UserUnauthorizedImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$UserUnauthorizedImpl implements UserUnauthorized {
+  const _$UserUnauthorizedImpl();
+
+  @override
+  String toString() {
+    return 'HomeState.userUnauthorized()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$UserUnauthorizedImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() userUnauthorized,
+  }) {
+    return userUnauthorized();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? userUnauthorized,
+  }) {
+    return userUnauthorized?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? userUnauthorized,
+    required TResult orElse(),
+  }) {
+    if (userUnauthorized != null) {
+      return userUnauthorized();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(HomeInitial value) initial,
+    required TResult Function(UserUnauthorized value) userUnauthorized,
+  }) {
+    return userUnauthorized(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(HomeInitial value)? initial,
+    TResult? Function(UserUnauthorized value)? userUnauthorized,
+  }) {
+    return userUnauthorized?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(HomeInitial value)? initial,
+    TResult Function(UserUnauthorized value)? userUnauthorized,
+    required TResult orElse(),
+  }) {
+    if (userUnauthorized != null) {
+      return userUnauthorized(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class UserUnauthorized implements HomeState {
+  const factory UserUnauthorized() = _$UserUnauthorizedImpl;
 }

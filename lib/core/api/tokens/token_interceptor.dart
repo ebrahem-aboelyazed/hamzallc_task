@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:hamzallc_task/core/core.dart';
-import 'package:hamzallc_task/modules/auth/auth.dart';
+import 'package:hamzallc_task/modules/home/home.dart';
 
 class TokenInterceptor extends QueuedInterceptorsWrapper {
   TokenInterceptor(this._tokenRepository, this._tokenStorage);
@@ -32,7 +32,7 @@ class TokenInterceptor extends QueuedInterceptorsWrapper {
       final refreshToken = _tokenStorage.getToken('refresh_token');
       if (refreshToken == null || refreshToken.isEmpty) {
         await _tokenStorage.clearTokens();
-        eventBus.fire(const AuthState.unauthorized());
+        eventBus.fire(const UserUnauthorized());
         return handler.next(err);
       }
       try {
@@ -60,7 +60,7 @@ class TokenInterceptor extends QueuedInterceptorsWrapper {
       } on DioException {
         if (err.response?.statusCode == 401) {
           await _tokenStorage.clearTokens();
-          eventBus.fire(const AuthState.unauthorized());
+          eventBus.fire(const UserUnauthorized());
         }
       }
     }

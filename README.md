@@ -4,6 +4,53 @@ A code challenge task for Hamzallc
 
 ---
 
+## Overview
+This Flutter application is designed to showcase proficiency in advanced networking and data handling,
+as well as robust database integration and offline support. 
+The app consists of two main tasks, each focusing on different aspects of mobile development.
+
+### Task 1: Advanced Networking and Data Handling
+In this task, the focus is on building a robust network layer for the application, emphasizing error handling, exception management, and request interception/synchronization.
+I utilize Dart as the programming language and Flutter framework. Key features include:
+
+- Implementation of error handling mechanisms to gracefully handle network errors and exceptions.
+- Request interception and synchronization for enhanced control over network requests.
+- Comprehensive documentation and unit tests to ensure code quality and reliability.
+- Bonus features include caching, reactive programming, and authentication/token management for additional points.
+
+### Task 2: Robust Database Integration and Offline Support
+For this task, located in the `modules/articles` folder, 
+I develop a mobile app that interacts with the New York Times (NYT) API to display a list of articles. 
+The app adopts an offline-first approach, storing articles locally for offline viewing. Key features include:
+
+- Integration with the NYT API to fetch articles and display them in the app.
+- Implementation of offline support to enable users to access stored articles even without an internet connection.
+- Background synchronization to update locally stored articles when the device is online.
+- Conflict resolution mechanism to handle differences between local and remote data.
+- User-friendly interface displaying article headlines, summaries, and images, with full article access both online and offline.
+
+## Repository Structure
+The app is organized into separate modules to address each task efficiently:
+
+### Core Module
+- Task 1: Advanced Networking and Data Handling
+    - Contains code related to building the network layer, error handling, and request synchronization.
+    - Documentation and unit tests are provided for thorough evaluation.
+    - Offline-first approach with caching and token management
+
+### Articles Module
+- Task 2: Robust Database Integration and Offline Support
+    - Implements functionalities related to database integration, offline support, and synchronization with the NYT API.
+    - User interface components for displaying articles and managing offline access are included.
+
+## Getting Started
+To set up and evaluate the app, follow these steps:
+
+1. Clone the repository to your local machine.
+2. Navigate to the respective task folders within the core and articles modules.
+3. Run the Flutter app on an emulator or physical device to explore its features.
+4. Review the codebase, documentation, and unit tests to assess the implementation quality.
+
 ## API Keys & Security
 
 This project is using [NYT] api for fetching articles data.
