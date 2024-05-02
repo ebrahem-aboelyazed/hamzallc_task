@@ -3,6 +3,7 @@ import 'package:hamzallc_task/core/core.dart';
 import 'package:hamzallc_task/modules/home/home.dart';
 import 'package:injectable/injectable.dart';
 
+/// Repository for handling token-related operations.
 @LazySingleton()
 class TokenRepository {
   TokenRepository(this.tokenStorage, this.dio);
@@ -10,6 +11,15 @@ class TokenRepository {
   final TokenStorage tokenStorage;
   final Dio dio;
 
+  /// Refreshes the access token using the provided refresh token.
+  ///
+  /// Parameters:
+  ///   - [refresh] (String):
+  ///   The refresh token used to obtain a new access token.
+  ///
+  /// Returns:
+  ///   A Future that resolves to a Token object containing the new access token
+  ///   and refresh token.
   Future<Token> refreshToken(String refresh) async {
     try {
       final request = await dio.post<dynamic>(

@@ -2,12 +2,24 @@ import 'package:dio/dio.dart';
 import 'package:hamzallc_task/core/core.dart';
 import 'package:hamzallc_task/modules/home/home.dart';
 
+/// Interceptor for handling token-based authentication and token refresh.
 class TokenInterceptor extends QueuedInterceptorsWrapper {
   TokenInterceptor(this._tokenRepository, this._tokenStorage);
 
   final TokenRepository _tokenRepository;
   final TokenStorage _tokenStorage;
 
+  /// Called when the request is about to be sent.
+  ///
+  /// Parameters:
+  ///   - [options] (RequestOptions):
+  ///   The request options.
+  ///   - [handler] (RequestInterceptorHandler):
+  ///   The request interceptor handler.
+  ///
+  /// Returns:
+  ///   Passes the request options to the next handler after adding
+  ///   the Authorization header if a token is available.
   @override
   Future<void> onRequest(
     RequestOptions options,
@@ -23,6 +35,15 @@ class TokenInterceptor extends QueuedInterceptorsWrapper {
     handler.next(options);
   }
 
+  /// Called when an exception was occurred during the request.
+  ///
+  /// Parameters:
+  ///   - [err] (DioException): The error that occurred.
+  ///   - [handler] (ErrorInterceptorHandler): The error interceptor handler.
+  ///
+  /// Returns:
+  ///   Resolves the error by refreshing the token if necessary
+  ///   and retrying the request.
   @override
   Future<void> onError(
     DioException err,
