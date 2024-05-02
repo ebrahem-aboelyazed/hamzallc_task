@@ -3,6 +3,7 @@ class AppConstants {
 
   static const String apiKeyName = 'API_KEY';
   static const String mode = 'mode';
+  static const String biometricMode = 'biometric_mode';
   static const String cacheBox = 'cache_box';
   static const String credentialsBox = 'credentials_box';
   static const String settings = 'settings';

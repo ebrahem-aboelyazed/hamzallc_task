@@ -8,5 +8,6 @@
   "settings": "الإعدادات",
   "dark_mode": "الوضع الليلي",
   "articles": "المقالات",
-  "published": "تاريخ النشر"
+  "published": "تاريخ النشر",
+  "unlock_with_biometric": "الفتح بالبصمه او الوجه"
 }

@@ -8,5 +8,6 @@
   "settings": "Settings",
   "dark_mode": "Dark Mode",
   "articles": "Articles",
-  "published": "Published"
+  "published": "Published",
+  "unlock_with_biometric": "Unlock with Biometric"
 }
