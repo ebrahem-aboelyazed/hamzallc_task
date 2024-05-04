@@ -58,6 +58,13 @@ The app is organized into separate modules to address each task efficiently:
       synchronization with the NYT API.
     - User interface components for displaying articles and managing offline access are included.
 
+## Testing
+
+- Unit tests are implemented to ensure the functionality and reliability of individual
+  components of the application.
+- Unit testing helps identify and fix potential issues early in the development process,
+  ensuring a robust and stable application.
+
 ## Documentation
 
 - The project maintains comprehensive documentation for classes and methods to ensure code
