@@ -81,17 +81,18 @@ The app is organized into separate modules to address each task efficiently:
 To set up and evaluate the app, follow these steps:
 
 1. Clone the repository to your local machine.
-2. Navigate to the respective task folders within the core and articles modules.
-3. Run the Flutter app on an emulator or physical device to explore its features.
-4. Review the codebase, documentation, and unit tests to assess the implementation quality.
+2. Run the Flutter app on an emulator or physical device to explore its features.
+3. Review the codebase, documentation, and unit tests to assess the implementation quality.
 
 ## API Keys & Security
 
 This project is using [NYT] api for fetching articles data.
 API Keys are stored in a .env file for security
-To make the app work properly please create a .env file and add the following key with the API key
-value that you will get from the [NYT] API
-[API_KEY] This is the name inside the .env file that corresponds to the [NYT]
+To make the app work properly please follow the following instructions
+
+- create a .env file
+- add the following key name [API_KEY]
+- add value that you will get from the [NYT] API to the key name inside the .env file
 
 ## Working with Translations 🌐
 
