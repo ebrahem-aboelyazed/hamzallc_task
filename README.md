@@ -60,7 +60,7 @@ The app is organized into separate modules to address each task efficiently:
 
 ## Documentation
 
-- The project maintains comprehensive documentation for all classes and methods to ensure code
+- The project maintains comprehensive documentation for classes and methods to ensure code
   readability, maintainability, and understanding.
 - Each class and method is extensively documented with detailed explanations of their
   functionalities, parameters, return types, and usage.
