@@ -10,7 +10,7 @@ import 'package:injectable/injectable.dart';
 @Singleton()
 class HiveManager {
   /// Sets up a secure encryption key for encrypting sensitive data.
-  ///
+  /// To be used with AES encryption
   /// Returns:
   ///   A Future that resolves to a Uint8List containing the encryption key.
   Future<Uint8List> _setupSecureKey() async {
@@ -59,6 +59,7 @@ class HiveManager {
   }
 
   /// Initializes the credentials box for storing user credentials.
+  /// Uses AES encryption for encrypting data before storing it
   ///
   /// Returns:
   ///   A Future that resolves to a
