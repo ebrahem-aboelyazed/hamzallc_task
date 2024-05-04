@@ -21,11 +21,15 @@ MediaMetadata _$MediaMetadataFromJson(Map<String, dynamic> json) {
 /// @nodoc
 mixin _$MediaMetadata {
   String get url => throw _privateConstructorUsedError;
+
   String get format => throw _privateConstructorUsedError;
+
   int get height => throw _privateConstructorUsedError;
+
   int get width => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
   @JsonKey(ignore: true)
   $MediaMetadataCopyWith<MediaMetadata> get copyWith =>
       throw _privateConstructorUsedError;
@@ -36,6 +40,7 @@ abstract class $MediaMetadataCopyWith<$Res> {
   factory $MediaMetadataCopyWith(
           MediaMetadata value, $Res Function(MediaMetadata) then) =
       _$MediaMetadataCopyWithImpl<$Res, MediaMetadata>;
+
   @useResult
   $Res call({String url, String format, int height, int width});
 }
@@ -47,6 +52,7 @@ class _$MediaMetadataCopyWithImpl<$Res, $Val extends MediaMetadata>
 
   // ignore: unused_field
   final $Val _value;
+
   // ignore: unused_field
   final $Res Function($Val) _then;
 
@@ -85,6 +91,7 @@ abstract class _$$MediaMetadataImplCopyWith<$Res>
   factory _$$MediaMetadataImplCopyWith(
           _$MediaMetadataImpl value, $Res Function(_$MediaMetadataImpl) then) =
       __$$MediaMetadataImplCopyWithImpl<$Res>;
+
   @override
   @useResult
   $Res call({String url, String format, int height, int width});
@@ -209,12 +216,16 @@ abstract class _MediaMetadata implements MediaMetadata {
 
   @override
   String get url;
+
   @override
   String get format;
+
   @override
   int get height;
+
   @override
   int get width;
+
   @override
   @JsonKey(ignore: true)
   _$$MediaMetadataImplCopyWith<_$MediaMetadataImpl> get copyWith =>

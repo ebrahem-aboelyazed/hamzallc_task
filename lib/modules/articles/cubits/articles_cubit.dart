@@ -56,6 +56,13 @@ class ArticlesCubit extends Cubit<ArticlesState> {
   }
 
   @override
+  void emit(ArticlesState state) {
+    if (!isClosed) {
+      super.emit(state);
+    }
+  }
+
+  @override
   Future<void> close() {
     backgroundSubscription.cancel();
     return super.close();

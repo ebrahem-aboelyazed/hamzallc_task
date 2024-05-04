@@ -21,28 +21,49 @@ Article _$ArticleFromJson(Map<String, dynamic> json) {
 /// @nodoc
 mixin _$Article {
   String get uri => throw _privateConstructorUsedError;
+
   String get url => throw _privateConstructorUsedError;
+
   int get id => throw _privateConstructorUsedError;
+
   int get assetId => throw _privateConstructorUsedError;
+
   String get source => throw _privateConstructorUsedError;
+
   String get publishedDate => throw _privateConstructorUsedError;
+
   String get updated => throw _privateConstructorUsedError;
+
   String get section => throw _privateConstructorUsedError;
+
   String get subSection => throw _privateConstructorUsedError;
+
   String get nytdsection => throw _privateConstructorUsedError;
+
   String get adxKeywords => throw _privateConstructorUsedError;
+
   String get byline => throw _privateConstructorUsedError;
+
   String get type => throw _privateConstructorUsedError;
+
   String get title => throw _privateConstructorUsedError;
+
   String get abstract => throw _privateConstructorUsedError;
+
   List<String> get desFacet => throw _privateConstructorUsedError;
+
   List<String> get orgFacet => throw _privateConstructorUsedError;
+
   List<String> get perFacet => throw _privateConstructorUsedError;
+
   List<String> get geoFacet => throw _privateConstructorUsedError;
+
   List<Media> get media => throw _privateConstructorUsedError;
+
   int get etaId => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
   @JsonKey(ignore: true)
   $ArticleCopyWith<Article> get copyWith => throw _privateConstructorUsedError;
 }
@@ -51,6 +72,7 @@ mixin _$Article {
 abstract class $ArticleCopyWith<$Res> {
   factory $ArticleCopyWith(Article value, $Res Function(Article) then) =
       _$ArticleCopyWithImpl<$Res, Article>;
+
   @useResult
   $Res call(
       {String uri,
@@ -83,6 +105,7 @@ class _$ArticleCopyWithImpl<$Res, $Val extends Article>
 
   // ignore: unused_field
   final $Val _value;
+
   // ignore: unused_field
   final $Res Function($Val) _then;
 
@@ -205,6 +228,7 @@ abstract class _$$ArticleImplCopyWith<$Res> implements $ArticleCopyWith<$Res> {
   factory _$$ArticleImplCopyWith(
           _$ArticleImpl value, $Res Function(_$ArticleImpl) then) =
       __$$ArticleImplCopyWithImpl<$Res>;
+
   @override
   @useResult
   $Res call(
@@ -434,6 +458,7 @@ class _$ArticleImpl with DiagnosticableTreeMixin implements _Article {
   @JsonKey()
   final String abstract;
   final List<String> _desFacet;
+
   @override
   @JsonKey()
   List<String> get desFacet {
@@ -443,6 +468,7 @@ class _$ArticleImpl with DiagnosticableTreeMixin implements _Article {
   }
 
   final List<String> _orgFacet;
+
   @override
   @JsonKey()
   List<String> get orgFacet {
@@ -452,6 +478,7 @@ class _$ArticleImpl with DiagnosticableTreeMixin implements _Article {
   }
 
   final List<String> _perFacet;
+
   @override
   @JsonKey()
   List<String> get perFacet {
@@ -461,6 +488,7 @@ class _$ArticleImpl with DiagnosticableTreeMixin implements _Article {
   }
 
   final List<String> _geoFacet;
+
   @override
   @JsonKey()
   List<String> get geoFacet {
@@ -470,6 +498,7 @@ class _$ArticleImpl with DiagnosticableTreeMixin implements _Article {
   }
 
   final List<Media> _media;
+
   @override
   @JsonKey()
   List<Media> get media {
@@ -617,46 +646,67 @@ abstract class _Article implements Article {
 
   @override
   String get uri;
+
   @override
   String get url;
+
   @override
   int get id;
+
   @override
   int get assetId;
+
   @override
   String get source;
+
   @override
   String get publishedDate;
+
   @override
   String get updated;
+
   @override
   String get section;
+
   @override
   String get subSection;
+
   @override
   String get nytdsection;
+
   @override
   String get adxKeywords;
+
   @override
   String get byline;
+
   @override
   String get type;
+
   @override
   String get title;
+
   @override
   String get abstract;
+
   @override
   List<String> get desFacet;
+
   @override
   List<String> get orgFacet;
+
   @override
   List<String> get perFacet;
+
   @override
   List<String> get geoFacet;
+
   @override
   List<Media> get media;
+
   @override
   int get etaId;
+
   @override
   @JsonKey(ignore: true)
   _$$ArticleImplCopyWith<_$ArticleImpl> get copyWith =>

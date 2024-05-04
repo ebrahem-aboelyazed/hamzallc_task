@@ -21,14 +21,20 @@ Media _$MediaFromJson(Map<String, dynamic> json) {
 /// @nodoc
 mixin _$Media {
   String get type => throw _privateConstructorUsedError;
+
   String get subtype => throw _privateConstructorUsedError;
+
   String get caption => throw _privateConstructorUsedError;
+
   String get copyright => throw _privateConstructorUsedError;
+
   int get approvedForSyndication => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'media-metadata')
   List<MediaMetadata> get mediaMetadata => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
   @JsonKey(ignore: true)
   $MediaCopyWith<Media> get copyWith => throw _privateConstructorUsedError;
 }
@@ -37,6 +43,7 @@ mixin _$Media {
 abstract class $MediaCopyWith<$Res> {
   factory $MediaCopyWith(Media value, $Res Function(Media) then) =
       _$MediaCopyWithImpl<$Res, Media>;
+
   @useResult
   $Res call(
       {String type,
@@ -54,6 +61,7 @@ class _$MediaCopyWithImpl<$Res, $Val extends Media>
 
   // ignore: unused_field
   final $Val _value;
+
   // ignore: unused_field
   final $Res Function($Val) _then;
 
@@ -101,6 +109,7 @@ abstract class _$$MediaImplCopyWith<$Res> implements $MediaCopyWith<$Res> {
   factory _$$MediaImplCopyWith(
           _$MediaImpl value, $Res Function(_$MediaImpl) then) =
       __$$MediaImplCopyWithImpl<$Res>;
+
   @override
   @useResult
   $Res call(
@@ -192,6 +201,7 @@ class _$MediaImpl with DiagnosticableTreeMixin implements _Media {
   @JsonKey()
   final int approvedForSyndication;
   final List<MediaMetadata> _mediaMetadata;
+
   @override
   @JsonKey(name: 'media-metadata')
   List<MediaMetadata> get mediaMetadata {
@@ -274,17 +284,23 @@ abstract class _Media implements Media {
 
   @override
   String get type;
+
   @override
   String get subtype;
+
   @override
   String get caption;
+
   @override
   String get copyright;
+
   @override
   int get approvedForSyndication;
+
   @override
   @JsonKey(name: 'media-metadata')
   List<MediaMetadata> get mediaMetadata;
+
   @override
   @JsonKey(ignore: true)
   _$$MediaImplCopyWith<_$MediaImpl> get copyWith =>

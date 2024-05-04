@@ -26,6 +26,7 @@ mixin _$ArticlesState {
     required TResult Function(List<Article> articles) fetchedBackground,
   }) =>
       throw _privateConstructorUsedError;
+
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
@@ -47,6 +48,7 @@ mixin _$ArticlesState {
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
+
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(ArticlesInitial value) initial,
@@ -58,6 +60,7 @@ mixin _$ArticlesState {
         fetchedBackground,
   }) =>
       throw _privateConstructorUsedError;
+
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(ArticlesInitial value)? initial,
@@ -93,9 +96,9 @@ class _$ArticlesStateCopyWithImpl<$Res, $Val extends ArticlesState>
     implements $ArticlesStateCopyWith<$Res> {
   _$ArticlesStateCopyWithImpl(this._value, this._then);
 
-  // ignore: unused_field
+// ignore: unused_field
   final $Val _value;
-  // ignore: unused_field
+// ignore: unused_field
   final $Res Function($Val) _then;
 }
 
@@ -394,7 +397,7 @@ class _$ArticlesLoadedImpl implements ArticlesLoaded {
   @override
   List<Article> get articles {
     if (_articles is EqualUnmodifiableListView) return _articles;
-    // ignore: implicit_dynamic_type
+// ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_articles);
   }
 
@@ -882,7 +885,7 @@ class _$ArticlesFetchedBackgroundImpl implements ArticlesFetchedBackground {
   @override
   List<Article> get articles {
     if (_articles is EqualUnmodifiableListView) return _articles;
-    // ignore: implicit_dynamic_type
+// ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_articles);
   }
 
