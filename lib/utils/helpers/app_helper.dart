@@ -75,7 +75,7 @@ class AppHelper {
             eventBus.fire(ArticlesFetchedBackground(articles));
           },
         );
-        BackgroundFetch.finish(taskId);
+        await BackgroundFetch.finish(taskId);
       },
     );
   }
