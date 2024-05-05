@@ -1,3 +1,4 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hamzallc_task/modules/articles/articles.dart';
@@ -12,11 +13,13 @@ class ArticlesListView extends StatelessWidget {
     final cubit = context.read<ArticlesCubit>();
     return RefreshIndicator(
       onRefresh: cubit.getMostViewedArticles,
-      child: ListView.builder(
-        itemCount: articles.length,
-        itemBuilder: (context, index) {
-          return ArticleCard(article: articles[index]);
-        },
+      child: FadeInUp(
+        child: ListView.builder(
+          itemCount: articles.length,
+          itemBuilder: (context, index) {
+            return ArticleCard(article: articles[index]);
+          },
+        ),
       ),
     );
   }
